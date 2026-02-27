@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim | Zeynep</title>
+</head>
+<body>
+
+    <header>
+        <h1>İletişim</h1>
+        <p>Bana ulaşmak için aşağıdaki formu kullanabilirsiniz.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>İletişim Formu</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="ad-soyad">Adınız ve Soyadınız:</label><br>
+                    <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınızı giriniz" required>
+                </p>
+
+                <p>
+                    <label for="email">E-posta Adresiniz:</label><br>
+                    <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
+                </p>
+
+                <p>
+                    <label for="konu">İletişim Nedeni:</label><br>
+                    <select id="konu" name="konu">
+                        <option value="genel">Genel Soru</option>
+                        <option value="proje">Proje İş Birliği (Yapay Zeka/IoT)</option>
+                        <option value="is">İş veya Staj Teklifi</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </p>
+
+                <p>
+                    Cinsiyetiniz:<br>
+                    <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+                    <label for="kadin">Kadın</label>
+                    <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+                    <label for="erkek">Erkek</label>
+                </p>
+
+                <p>
+                    <label for="mesaj">Mesajınız:</label><br>
+                    <textarea id="mesaj" name="mesaj" rows="5" cols="40" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="bulten" name="bulten" checked>
+                    <label for="bulten">Yeni yazılar ve projeler hakkında e-posta almak istiyorum.</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Gönder">
+                    <input type="reset" value="Temizle">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <p><a href="index.html">&larr; Ana sayfaya geri dön</a></p>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Web Programlama Dersi - Zeynep</p>
+    </footer>
+
+</body>
+</html>
